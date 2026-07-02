@@ -96,13 +96,13 @@ export default function ContactPage() {
                 {
                   icon: Phone,
                   title: "Phone",
-                  lines: [COMPANY.phone, COMPANY.altPhone],
+                  lines: [COMPANY.phone, COMPANY.altPhone, COMPANY.phone3],
                   href: `tel:${COMPANY.phone.replace(/\s/g, "")}`,
                 },
                 {
                   icon: Mail,
                   title: "Email",
-                  lines: [COMPANY.email],
+                  lines: [COMPANY.email, COMPANY.altEmail],
                   href: `mailto:${COMPANY.email}`,
                 },
                 {

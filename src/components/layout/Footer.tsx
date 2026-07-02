@@ -122,33 +122,28 @@ export default function Footer() {
                   {COMPANY.address}
                 </span>
               </li>
-              <li className="flex items-center gap-3">
-                <Phone className="w-4 h-4 text-gold-500 flex-shrink-0" />
-                <a
-                  href={`tel:${COMPANY.phone.replace(/\s/g, "")}`}
-                  className="text-white/60 hover:text-gold-400 text-sm transition-colors"
-                >
-                  {COMPANY.phone}
-                </a>
-              </li>
-              <li className="flex items-center gap-3">
-                <Phone className="w-4 h-4 text-gold-500 flex-shrink-0" />
-                <a
-                  href={`tel:${COMPANY.altPhone.replace(/\s/g, "")}`}
-                  className="text-white/60 hover:text-gold-400 text-sm transition-colors"
-                >
-                  {COMPANY.altPhone}
-                </a>
-              </li>
-              <li className="flex items-center gap-3">
-                <Mail className="w-4 h-4 text-gold-500 flex-shrink-0" />
-                <a
-                  href={`mailto:${COMPANY.email}`}
-                  className="text-white/60 hover:text-gold-400 text-sm transition-colors"
-                >
-                  {COMPANY.email}
-                </a>
-              </li>
+              {[COMPANY.phone, COMPANY.altPhone, COMPANY.phone3].map((num) => (
+                <li key={num} className="flex items-center gap-3">
+                  <Phone className="w-4 h-4 text-gold-500 flex-shrink-0" />
+                  <a
+                    href={`tel:${num.replace(/\s/g, "")}`}
+                    className="text-white/60 hover:text-gold-400 text-sm transition-colors"
+                  >
+                    {num}
+                  </a>
+                </li>
+              ))}
+              {[COMPANY.email, COMPANY.altEmail].map((mail) => (
+                <li key={mail} className="flex items-center gap-3">
+                  <Mail className="w-4 h-4 text-gold-500 flex-shrink-0" />
+                  <a
+                    href={`mailto:${mail}`}
+                    className="text-white/60 hover:text-gold-400 text-sm transition-colors break-all"
+                  >
+                    {mail}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import {
   Award,
@@ -150,9 +151,16 @@ export default function AboutPage() {
               <div className="grid md:grid-cols-5 gap-0">
                 {/* Left accent panel */}
                 <div className="md:col-span-2 bg-gradient-to-br from-navy-800 to-navy-700 p-10 flex flex-col items-center justify-center text-center">
-                  {/* Avatar */}
-                  <div className="w-28 h-28 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center mb-5 shadow-xl ring-4 ring-white/20">
-                    <span className="text-white text-4xl font-bold">AJ</span>
+                  {/* Photo */}
+                  <div className="relative w-36 h-36 rounded-full overflow-hidden mb-5 shadow-xl ring-4 ring-white/20 mx-auto">
+                    <Image
+                      src="/chairman.jpg"
+                      alt="Aniket Kumar Jha — Chairman, Zenith Dwellings"
+                      fill
+                      className="object-cover object-top"
+                      sizes="144px"
+                      priority
+                    />
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-1">
                     {COMPANY.chairman}
@@ -169,11 +177,11 @@ export default function AboutPage() {
                     <span>Pune, Maharashtra</span>
                   </div>
                   <a
-                    href="tel:+919876543210"
+                    href="tel:+919518310067"
                     className="mt-3 flex items-center gap-2 text-white/70 hover:text-gold-300 text-sm transition-colors"
                   >
                     <Phone className="w-4 h-4 text-gold-400" />
-                    +91 98765 43210
+                    +91 95183 10067
                   </a>
                 </div>
 

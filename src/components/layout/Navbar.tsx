@@ -78,11 +78,11 @@ export default function Navbar() {
           {/* CTA row */}
           <div className="flex items-center gap-3">
             <a
-              href={`tel:+919876543210`}
+              href="tel:+919518310067"
               className="hidden lg:flex items-center gap-2 text-white/70 hover:text-white text-sm transition-colors"
             >
               <Phone className="w-3.5 h-3.5" />
-              <span>+91 98765 43210</span>
+              <span>+91 95183 10067</span>
             </a>
             <Link
               href="/contact"
@@ -132,11 +132,11 @@ export default function Navbar() {
             Schedule a Visit
           </Link>
           <a
-            href="tel:+919876543210"
+            href="tel:+919518310067"
             className="mt-3 flex items-center justify-center gap-2 text-white/60 hover:text-white text-sm transition-colors"
           >
             <Phone className="w-4 h-4" />
-            +91 98765 43210
+            +91 95183 10067
           </a>
         </div>
       </div>
