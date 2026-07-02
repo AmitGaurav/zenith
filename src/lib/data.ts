@@ -7,7 +7,7 @@ export const COMPANY = {
   chairman: "Aniket Kumar Jha",
   chairmanExperience: "10+",
   address: "Pune, Maharashtra, India",
-  email: "aniket.katihar@gmail.com",
+  email: "18threaltypune@gmail.com",
   altEmail: "aniketjha018@gmail.com",
   phone: "+91 95183 10067",
   altPhone: "+91 95953 91666",
@@ -15,6 +15,13 @@ export const COMPANY = {
   cities: ["Pune", "PCMC (Pimpri-Chinchwad)"],
   established: "2014",
   totalCustomers: "100+",
+  rera: {
+    number: "A52100040714",
+    authority: "MahaRERA",
+    validFrom: "08/02/2023",
+    validTo: "08/02/2028",
+    state: "Maharashtra",
+  },
   socialLinks: {
     facebook: "#",
     instagram: "#",

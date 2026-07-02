@@ -14,6 +14,8 @@ import {
   CheckCircle2,
 } from "lucide-react";
 import { COMPANY, STATS } from "@/lib/data";
+import GroupCompaniesSection from "@/components/sections/GroupCompaniesSection";
+import RERASection from "@/components/sections/RERASection";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -258,6 +260,9 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      <GroupCompaniesSection />
+      <RERASection />
 
       {/* Company Journey */}
       <section className="py-20 bg-navy-800 relative overflow-hidden">
