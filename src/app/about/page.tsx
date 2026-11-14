@@ -156,7 +156,7 @@ export default function AboutPage() {
                   {/* Photo */}
                   <div className="relative w-36 h-36 rounded-full overflow-hidden mb-5 shadow-xl ring-4 ring-white/20 mx-auto">
                     <Image
-                      src="/chairman.jpg"
+                      src="/aniket.jpeg"
                       alt="Aniket Kumar Jha — Chairman, Zenith Dwellings"
                       fill
                       className="object-cover object-top"
